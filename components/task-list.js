@@ -1,7 +1,7 @@
 Vue.component('task-list', {
     template: `
-    <ul>
-        <li v-for="item in items">
+    <ul class="mdl-list">
+        <li class="mdl-list__item" v-for="item in items">
           <task-item :item="item" v-on:select-item="selectItemEdit"></task-item>
         </li>
     </ul>
