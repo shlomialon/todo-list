@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="app">
+    <task-add :items="items"></task-add>
+    <task-list :items="items"  v-on:select-item="selectItem" v-on:remove-item="removeItem" :selected-item="selectedItem"></task-list>
+    <task-details :selected-item="selectedItem" v-on:remove-item="removeItem"></task-details>
+</div>
+
+<script src="https://unpkg.com/vue"></script>
+<script src="components/task-add.js"></script>
+<script src="components/task-list.js"></script>
+<script src="components/task-details.js"></script>
+<script src="components/task-delete.js"></script>
+<script src="components/task-item.js"></script>
+<script src="todo.js"></script>
+</body>
+</html>
