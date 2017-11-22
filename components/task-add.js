@@ -1,8 +1,10 @@
 Vue.component('task-add', {
     template: `
 <div>
-    <input v-on:keyup.enter="addToList" v-model="newItemText" type="text" placeholder="insert task to list.."/>
-    <button v-on:click="addToList">
+  <div class="mdl-textfield mdl-js-textfield">
+    <input class="mdl-textfield__input" v-on:keyup.enter="addToList" v-model="newItemText" type="text" placeholder="insert task to list.."/>
+  </div>
+    <button v-on:click="addToList" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
         Add Item
     </button>
 </div>

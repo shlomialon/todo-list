@@ -3,21 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="./css/material.min.css">
 </head>
 <body>
 
 <div id="app">
-    <task-add :items="items"></task-add>
-    <task-list :items="items"  v-on:select-item="selectItem" v-on:remove-item="removeItem" :selected-item="selectedItem"></task-list>
-    <task-details :selected-item="selectedItem" v-on:remove-item="removeItem"></task-details>
+    <App></App>
 </div>
 
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 <script src="https://unpkg.com/vue"></script>
 <script src="components/task-add.js"></script>
 <script src="components/task-list.js"></script>
 <script src="components/task-details.js"></script>
 <script src="components/task-delete.js"></script>
 <script src="components/task-item.js"></script>
+<script src="components/App.js"></script>
 <script src="todo.js"></script>
 </body>
 </html>
